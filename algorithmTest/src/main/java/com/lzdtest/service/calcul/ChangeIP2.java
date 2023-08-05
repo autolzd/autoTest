@@ -30,9 +30,9 @@ public class ChangeIP2 {
     }
 
     private static String numToIp(String inputStr) {
-        String num = Integer.toBinaryString(Integer.parseInt(inputStr));//十进制转成二进制
+        StringBuilder num = new StringBuilder(Integer.toBinaryString(Integer.parseInt(inputStr)));//十进制转成二进制
         while (num.length() < 32) {
-            num = "0" + num;
+            num.insert(0, "0");
         }
         String[] str = new String[4];
         for (int i = 0; i < 4; i++) {
