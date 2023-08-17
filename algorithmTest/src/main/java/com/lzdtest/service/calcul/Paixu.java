@@ -17,7 +17,12 @@ public class Paixu {
             int strs = Integer.parseInt(strings[i]);
             
         }
-
         return strings;
     }
+    //一个数组 有序数组 判断数字 是否在里面
+    // 100 台阶 一次 可以走1 也可以走2
+
+//    public int[] getNum(int[] nums,int taget){
+//        nums.
+//    }
 }

@@ -4,22 +4,22 @@
 2、三年自动化测试经验，熟悉java、python语言，可以根据项目需求，使用java python编写测试脚本，落地自动化。有过python+pytest框架搭建经验，包含了ui自动化、接口自动化落地经验
 我的自我介绍完毕 谢谢老师
 
-类加载器
-运行时数据区（堆、栈、方法区、本地方法栈和程序计数器）
-方法区：静态变量、常量、类信息和运行时常量池
-程序计数器：每个线程都有一个程序计数器，就像一个指针，指向方法去中的方法字节码（比如每次读下一条指令的时候给它+1）
-本地方法栈：登记native方法，在执行引擎的时候加载本地库
-栈：生命周期和线程同步；不存在垃圾回收问题；存放八大基本类型、对象引用变量名、实例的方法
-堆：类的实例、字符串常量池
-新生区：伊甸园区、幸存0区、幸存1区
-养老区
-永久区（方法区的具体实现，jdk1.8后改为叫元空间，一部分人认为他不应该划分在堆内，一部分人认为应该划分在堆内）
-执行引擎
-本地库接口
+自动化测试平台 --
+工作内容：需求测试（功能） 自动化测试（需求自动化python java） 线上问题答疑（案例编写指导，bug、需求整理）
+wiki整理
+波分产品 ：
+工作内容 ： 需求测试 需求的自动化落地
+wiki整理
+终端测试 ：
+工作内容 ： 测试执行：整机功能测试、兼容性测试、性能脚本编写
+
 
 inner join 两个表都有的 select name from tableA a inner join tableB b on a.key = b.key a和b重叠的部分
 left join select name from tableA a left join tableB b on a.key = b.key 包含a的全部，b和a重叠的部分
 right join select name from tableA a right join tableB b on a.key = b.key 包含b的全部，b和a重叠的部分
 
+
+find + 目录 -name + 具体查找内容（\*.txt）查找目录下的txt文件
+cp -a file1 file2把file1复制成file2  mv重命名 mv file1 file2(把file1重命名成file2) \  mv file1 dir移动file1到dir目录
 
 

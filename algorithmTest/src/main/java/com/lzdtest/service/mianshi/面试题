@@ -1,0 +1,107 @@
+1、五年的测试经验，包含两年功能测试。熟悉软件测试流程及开发流程，熟悉测试需求分析，测试用例设计。熟悉常用的测试工具postman、jmeter、filder、git、xmind工具
+2、三年自动化测试经验，熟悉java、python语言，可以根据项目需求，使用java python编写测试脚本，落地自动化。有过python+pytest的ui自动、接口自动化落地经验
+
+
+类加载器
+运行时数据区（堆、栈、方法区、本地方法栈和程序计数器）
+方法区：静态变量、常量、类信息和运行时常量池
+程序计数器：每个线程都有一个程序计数器，就像一个指针，指向方法去中的方法字节码（比如每次读下一条指令的时候给它+1）
+本地方法栈：登记native方法，在执行引擎的时候加载本地库
+栈：生命周期和线程同步；不存在垃圾回收问题；存放八大基本类型、对象引用变量名、实例的方法
+堆：类的实例、字符串常量池
+新生区：伊甸园区、幸存0区、幸存1区 jvm 内存占比  8 1 1
+养老区
+永久区（方法区的具体实现，jdk1.8后改为叫元空间，一部分人认为他不应该划分在堆内，一部分人认为应该划分在堆内）
+执行引擎
+本地库接口
+
+inner join 两个表都有的 select name from tableA a inner join tableB b on a.key = b.key a和b重叠的部分
+left join select name from tableA a left join tableB b on a.key = b.key 包含a的全部，b和a重叠的部分
+right join select name from tableA a right join tableB b on a.key = b.key 包含b的全部，b和a重叠的部分
+
+1、一个测试场景案例设计
+功能
+安全
+性能
+兼容性
+易用性
+界面
+
+贷款 超过50w 查看额度
+
+产品 额度不一样 产品之外的
+用户不用人 额度不一致 身份证
+时间 不同时间 额度不一样 历史额度
+
+用户资格
+用户账户 卡 存折
+额度
+
+
+
+
+2、UI自动化
+等待：强制等待 隐式等待 显示等待
+        # 强制等待
+        time.sleep(2)
+
+        # 隐式等待
+        self.driver.implicitly_wait(10)
+
+        # 显示等待
+        WebDriverWait(self.driver, 10).until(ec.visibility_of_element_located())
+
+3、元素查找方式：
+        self.driver.find_element(By.ID,'')
+        self.driver.find_element(By.CSS_SELECTOR,'')
+        self.driver.find_element(By.NAME,'')
+        self.driver.find_element(By.CLASS_NAME,'')
+        self.driver.find_element(By.XPATH,'')
+        self.driver.find_element(By.TAG_NAME,'')
+        self.driver.find_element(By.LINK_TEXT,'')
+
+4、如何判断元素存在 isElementPresent
+
+5、
+Page Objects是指UI界面上用于与用户进行交互的对象。它可以指整个页面，也可以指Page上的某个区域。Page Objects是你的test code的交互对象，
+是对实际UI的一种抽象模型化。通过Page Objects可以减少重复代码的编写，
+例如，很多页面都有同样的header，footer，navigator等部分，如果对这些进行抽象，只写一次就可以在其他地方通用了。
+
+
+
+A原子性 事务是数据库操作的逻辑单位，事务中包含的操作 要么全部执行 要么不执行
+保持原子性的机制 ：数据库的undo log日志记录回滚的日志信息，利用undo log日志 将数据回滚到修改前
+C一致性 事务操作前后 数据库的完整性没有被破坏
+
+I隔离性 事务与事务之间是 相互隔离 互不影响的
+D持久性 事务发生后 对数据库的影响是永久的 不受数据库故障等的影响
+redo log日志包括内存中的日志缓冲以及磁盘上的持久化文件，事务提交时，必须将所有的操作日志写在磁盘上进行持久化
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
